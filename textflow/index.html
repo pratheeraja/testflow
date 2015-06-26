@@ -1,0 +1,197 @@
+<html>
+<head>
+	<title>Pratheesh };</title>
+	 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<script src="jquery.simple-text-rotator.js"></script>
+ <link rel="stylesheet" href="simpletextrotator.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
+</head>
+
+
+<style>
+body{
+font-family: 'Lato', sans-serif;
+  margin: 0;
+  background: #000; 
+    position:relative;
+}
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+
+
+
+  color: black;
+
+
+  margin:2rem;
+
+  font-size: 20px;
+
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url() #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+navb{
+height:20px;
+}
+
+</style>
+
+<body>
+<video autoplay controls muted  poster="" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+
+<source src="SELECT_01.mp4" type="video/mp4">
+<source src="SELECT_02.mp4" type="video/mp4">
+</video>
+<video autoplay controls muted  poster="" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+
+
+<source src="SELECT_04.mp4" type="video/mp4">
+</video>
+
+<div class="navb">
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Pratheesh };</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#home"><span class =" glyphicon glyphicon-home"></span> Home</a></li>
+       	 <li><a href="#Twitter"><span class =" glyphicon glyphicon-retweet"></span> Twitter</a></li>
+		   <li><a href="#Facebook"><span class =" glyphicon glyphicon-thumbs-up"></span> Facebook</a></li>
+        <li><a href="#"><span class ="glyphicon glyphicon-picture"></span> Instagram</a></li>
+		     <li><a href="#"><span class =" glyphicon glyphicon-film"></span> Youtube</a></li>
+        <li><a href="#"><span class =" glyphicon glyphicon-map-marker"></span> My Location</a></li>
+	
+      
+		<li><a href="#"><span class =" 	glyphicon glyphicon-earphone"></span> Contact</a></li>
+		
+    
+   
+		
+
+		  		  <li><a href="#"> Built with <span class ="glyphicon glyphicon-heart"></span> by Pratheesh <span class ="glyphicon glyphicon-music"></span>  </a></li>
+			
+			    <li>  <a href="home/index.html" class="btn btn-default  btn-lg " role="button">Enter My Site</a> </li>
+		
+</ul>
+ 
+    </div>
+  </div>
+</nav>
+
+</div>
+<div id="polina">
+	<section class="cd-intro">
+		<h1 class="cd-headline letters type">
+			<span> </span> 
+			 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">C</b>
+				<b>C ++</b>
+				<b>HTML</b>
+				<b>CSS</b>
+				<b>JAVASCRIPT</b>
+				<b>JQUERY</b>
+				<b>BOOTSTRAP</b>
+				<b>PYTHON</b>
+				<b>DJANGO</b>
+				<b>ANDROID</b>
+				<b>WINDOWS</b>
+				<b>KEYBOARD</b>
+				<b>YUVAN</b>
+				<b>RAJA SIR</b>
+				<b>THALA</b>
+				<b>THALAIVAR</b>
+				<b>PHOTOGRAPHY</b>
+				<b>HTC</b>
+				<b>BLACKBERRY</b>
+				<b>FLEKSY</b>
+				<b>GOOGLE</b>
+				<b>TWITTER</b>
+				
+				<b></b>
+				<b>HTC</b>
+				<b>BLACKBERRY</b>
+				<span> </span> 
+			</span>
+		</h1>
+	</section> <!-- cd-intro -->
+</div>
+<div class = "container">
+
+
+
+  <div>
+  </body>
+
+<script>
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+</script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+</html>
